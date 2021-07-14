@@ -1,0 +1,91 @@
+#ol {
+  background-color: red;
+}
+.caption {
+  padding-left: 100px;
+}
+.caption1 {
+  padding-left: 150px;
+}
+body .p2 {
+  color: rebeccapurple;
+}
+.p1 {
+  color: red;
+}
+p:nth-child(4n) {
+  background-color: darkblue;
+}
+.red-input:focus {
+  color: red;
+}
+.lime-input:focus {
+  color: lime;
+}
+p::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+}
+p::before {
+  display: block;
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-radius: 50%;
+}
+/*qwqwwqqwqwwq*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  content: "";
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+label {
+  position: relative;
+  padding-left: 20px;
+}
+input:checked + label {
+  color: gold;
+}
+input:checked + label{
+  clear-after: none;
+}
+label::before{
+    display: block;
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    transform: rotate(45deg);
+}
+input:checked+label::after{
+    display: block;
+    content: " ";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: gold;
+    top: 3px;
+    left: 3px;
+}
